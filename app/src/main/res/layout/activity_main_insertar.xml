@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".MainActivityInsertar">
+
+
+    <TextView
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        android:text="Insertar CheckList"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="437dp"
+        android:layout_marginTop="15sp">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp">
+
+            <EditText
+                android:id="@+id/empresa_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Empresa #" />
+
+            <EditText
+                android:id="@+id/Inspeccion_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Inspeccion #" />
+
+            <EditText
+                android:id="@+id/Pedido_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Pedido #" />
+
+            <EditText
+                android:id="@+id/Pedido_Linea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Pedido Linea" />
+
+            <EditText
+                android:id="@+id/Empleado_Id"
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:hint="Empleado No."
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp">
+
+            <EditText
+                android:id="@+id/InspeccionFecha"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:textSize="12sp"
+                android:hint="Fecha"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/Inspeccion_Tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Tipo" />
+
+            <EditText
+                android:id="@+id/Inspeccion_Observacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Observaciones" />
+
+            <EditText
+                android:id="@+id/Inspeccion_Estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint=" Estado" />
+
+            <EditText
+                android:id="@+id/Inspeccion_Resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="I Resultado" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp">
+
+            <EditText
+                android:id="@+id/Inspeccion_01_Luz_Delantera_Alta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Luz D.Alta"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:id="@+id/Inspeccion_02_Luz_Delantera_Baja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Luz D.Baja" />
+
+            <EditText
+                android:id="@+id/Inspeccion_03_Luces_Emergencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="L.Emergencia" />
+
+            <EditText
+                android:id="@+id/Inspeccion_04_Neblinera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Neblinera" />
+
+            <EditText
+                android:id="@+id/Inspeccion_05_Direccional_Delantera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="D.Delantera" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp">
+
+            <EditText
+                android:id="@+id/Inspeccion_06_Direccion_Posteriores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="D. Posteriores" />
+
+            <EditText
+                android:id="@+id/Inspeccion_07_Parabrisas_Delantera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="P.Delantera" />
+
+            <EditText
+                android:id="@+id/Inspeccion_08_Parabrisas_Posteriores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="P.Posteriores" />
+
+            <EditText
+                android:id="@+id/Inspeccion_09_Ventanas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Ventanas" />
+
+            <EditText
+                android:id="@+id/Inspeccion_10_Espejos_Laterales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="E.Laterales" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp">
+
+            <EditText
+                android:id="@+id/Inspeccion_11_Tapa_Tanque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="T.Tanque" />
+
+            <EditText
+                android:id="@+id/Inspeccion_12_Alarme_Retroceso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="A. Retroceso" />
+
+            <EditText
+                android:id="@+id/Inspeccion_13_Estado_Tablero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="E .Tablero" />
+
+            <EditText
+                android:id="@+id/Inspeccion_14_Freno_Mano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint=" F. Mano" />
+
+            <EditText
+                android:id="@+id/Inspeccion_15_Freno_Servicios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="F. Servicios" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp">
+
+            <EditText
+                android:id="@+id/Inspeccion_16_Cinturon_Seguridad_Chofer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="C.Chofer" />
+
+            <EditText
+                android:id="@+id/Inspeccion_17_Cinturon_Pasajeros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="C. Pasajeros" />
+
+            <EditText
+                android:id="@+id/Inspeccion_18_Orden_Limpieza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Orden_Limpieza" />
+
+
+            <EditText
+                android:id="@+id/Inspeccion_19_Bocinas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Bocinas" />
+
+            <EditText
+                android:id="@+id/Inspeccion_20_Asientos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Asientos" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp">
+
+            <EditText
+                android:id="@+id/Inspeccion_21_Llantas_Delantera_Derecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Llantas D.D." />
+
+            <EditText
+                android:id="@+id/Inspeccion_22_Llanta_Delantera_Izquierda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Llanta D.I." />
+
+            <EditText
+                android:id="@+id/Inspeccion_23_Llanta_Posterior_Derecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Delantera P.D" />
+
+            <EditText
+                android:id="@+id/Inspeccion_24_Llanta_Posterior_Izquierda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Llanta P.I." />
+
+            <EditText
+                android:id="@+id/Inspeccion_25_Llanta_Repuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Llanta R" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp">
+
+            <EditText
+                android:id="@+id/Inspeccion_26_Conos_Seguridad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint=" Conos S." />
+
+            <EditText
+                android:id="@+id/Inspeccion_27_Extintor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Extintor" />
+
+            <EditText
+                android:id="@+id/Inspeccion_28_Tricket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Tricket" />
+
+
+            <EditText
+                android:id="@+id/Inspeccion_29_Rallon_Delantero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Rallon D" />
+
+            <EditText
+                android:id="@+id/Inspeccion_30_Rallon_Trasero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Rallon T. " />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp">
+
+            <EditText
+                android:id="@+id/Inspeccion_31_Rallon_Lateral_Derecho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Rallon  L.D." />
+
+            <EditText
+                android:id="@+id/Inspeccion_32_Rallon_Lateral_Izquierdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Rallon L.I." />
+
+            <EditText
+                android:id="@+id/Inspeccion_33_Tarjeta_Propiedad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Tarjeta P " />
+
+            <EditText
+                android:id="@+id/Inspeccion_34_Tanque_Lleno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Tanque Lleno" />
+
+            <EditText
+                android:id="@+id/Inspeccion_35_Llaves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="Llaves" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnInsertarCliente"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:backgroundTint="#009688"
+        android:onClick="onClick"
+        android:text="Insertar Cliente"
+        android:textSize="15sp" />
+
+</LinearLayout>
